@@ -6,7 +6,7 @@ with open("nothing_here.txt", "a+") as arquivo:
 
 password = ''
 generate_layout = [
-    [sg.Push(), sg.Text("Gerador de senhas Fortes!"), sg.Push()],
+    [sg.Push(), sg.Text("Gerador de senhas Fortes! Breno Developer"), sg.Push()],
     [sg.Text("Aonde a senha será usada?"), sg.In(key="local")],
     [sg.Push(), sg.Btn("Gerar"), sg.Combo(["8", "10", "12", "14", "16", "18",
      "20", "30", "40", "50"], key="passLenght"), sg.In("", key="passPlace")],
@@ -100,5 +100,3 @@ while True:
                         windowSenhas.close()
                         win2 = False
                         break
-
-print("Hello World")
